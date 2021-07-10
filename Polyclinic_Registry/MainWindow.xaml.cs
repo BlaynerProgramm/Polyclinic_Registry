@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Polyclinic_Registry.ViewModel;
 
 namespace Polyclinic_Registry
 {
@@ -23,6 +24,7 @@ namespace Polyclinic_Registry
 		public MainWindow()
 		{
 			InitializeComponent();
+			DataContext = new MainViewModel();
 		}
 	}
 }

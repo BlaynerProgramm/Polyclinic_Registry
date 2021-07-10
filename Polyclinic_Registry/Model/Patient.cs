@@ -2,7 +2,9 @@
 
 namespace Polyclinic_Registry.Model
 {
-	//Пациент
+	/// <summary>
+	///Пациент
+	/// </summary>
 	public class Patient
 	{
 		public string FullName { get; init; }

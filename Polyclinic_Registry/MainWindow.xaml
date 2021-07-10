@@ -3,10 +3,39 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Polyclinic_Registry"
-        mc:Ignorable="d"
+        xmlns:local="clr-namespace:Polyclinic_Registry" xmlns:viewmodel="clr-namespace:Polyclinic_Registry.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+		mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="7*"/>
+			<RowDefinition Height="55*"/>
+		</Grid.RowDefinitions>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Patients}">
+	        <ListBox.ItemTemplate>
+		        <DataTemplate>
+			        <Grid>
+				        <Grid.ColumnDefinitions>
+					        <ColumnDefinition Width="100"/>
+					        <ColumnDefinition/>
+				        </Grid.ColumnDefinitions>
+				        <Grid.RowDefinitions>
+					        <RowDefinition Height="auto"/>
+					        <RowDefinition Height="auto"/>
+					        <RowDefinition Height="auto"/>
+					        <RowDefinition Height="auto"/>
+					        <RowDefinition Height="auto"/>
+				        </Grid.RowDefinitions>
+				        <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" BorderThickness="2">
+					        <Image Source=""/>
+				        </Border>
+				        <Label Content="{Binding FullName}" Grid.Row="0" Grid.Column="1"/>
+				        <Label Content="{Binding Address}" Grid.Row="3" Grid.Column="1"/>
+				        <Label Content="{Binding Phone}" Grid.Row="2" Grid.Column="1"/>
+			        </Grid>
+		        </DataTemplate>
+	        </ListBox.ItemTemplate>
+		</ListBox>
 
-    </Grid>
+	</Grid>
 </Window>
