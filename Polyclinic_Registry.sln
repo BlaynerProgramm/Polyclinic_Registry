@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polyclinic_Registry", "Polyclinic_Registry\Polyclinic_Registry.csproj", "{FE6657E4-7448-4D6E-81C8-AACA193B50BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE6657E4-7448-4D6E-81C8-AACA193B50BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6657E4-7448-4D6E-81C8-AACA193B50BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6657E4-7448-4D6E-81C8-AACA193B50BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6657E4-7448-4D6E-81C8-AACA193B50BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FBD9732-0006-44E0-8352-457320C27B4C}
+	EndGlobalSection
+EndGlobal
